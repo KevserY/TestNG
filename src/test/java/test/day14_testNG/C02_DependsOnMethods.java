@@ -39,5 +39,6 @@ public class C02_DependsOnMethods {
     git init
     git add .
         git commit -m "ilk ders"
+        git branch -M main
         git remote add origin https://github.com/KevserY/TestNG.git
-        git push
+        git push -u origin main
