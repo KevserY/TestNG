@@ -25,9 +25,10 @@ public class Driver {
         // eğer null ise değer ata (new ChromeDriver()),  null değilse değer atama!
         if (driver == null) {
             driver = new ChromeDriver(); // biz ise burada ChromeDriver değeri atıyoruz.}
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         }
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
         return driver;
     }
 
