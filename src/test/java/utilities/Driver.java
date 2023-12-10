@@ -62,16 +62,18 @@ public class Driver {
     }
 
     public static void closeDriver() {
-        driver.close();
+
 
         if (driver != null) {
+            driver.close();
             driver = null;
         }
     }
 
     public static void quitDriver() {
-        driver.quit();
+
         if (driver != null) {
+            driver.quit();
             driver = null;
         }
     }
