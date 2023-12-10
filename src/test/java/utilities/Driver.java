@@ -32,12 +32,9 @@ public class Driver {
      */
 
     static WebDriver driver; // java, default olarak null değer verir.
-
     public static WebDriver getDriver() {
         String browser = ConfigReader.getProperty("browser");
-
         if (driver == null) {
-
             switch (browser) {
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
@@ -62,8 +59,6 @@ public class Driver {
     }
 
     public static void closeDriver() {
-
-
         if (driver != null) {
             driver.close();
             driver = null;
@@ -71,11 +66,9 @@ public class Driver {
     }
 
     public static void quitDriver() {
-
         if (driver != null) {
             driver.quit();
             driver = null;
         }
     }
-
 }

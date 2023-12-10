@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="tüm testleri çalıştırma" thread-count="2" parallel="tests" verbose="3">
+    <!--Paralel çalıştırma için suite tag'ına 2 yeni attribute ekleriz
+        1- thread-count : aynı anda kaç browser'ın beraber çalışacağını belirler.
+        2- parallel : görev bölüşümünün hangi seviyede olacağı,
+                      görev paylaşımı sırasında;
+                      - yükün mümkün olduğunca browser'lara eşit dağıtılması,
+                      - bağlantılı method'ların aynı browser tarafından çalıştırılması
+                        durumları gözönüne alınmalıdır.
+        3- verbose : 1-10 arası değer alır.
+                     Test çalıştırma sonrasında consolda çıkan yazıların
+                     az veya çok olmasını belirler. 1 en az, 10 en çok demektir.
+        -->
+
+
+    <test name="paralel 1. browser">
+
+        <packages>
+            <package name="tests.day14_testNG"></package>
+            <package name="tests.day16_softAssertion_xmlFiles"></package>
+        </packages>
+    </test>
+
+    <test name="paralel 2. browser">
+        <packages>
+            <package name="tests.day15_configuration_driver_Kullanimi"></package>
+        </packages>
+
+    </test>
+
+
+</suite>

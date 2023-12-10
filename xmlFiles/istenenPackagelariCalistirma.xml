@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="istenen Package'ları çalıştırmak">
+    
+    <test name="15. gün package">
+        <packages>
+            <package name="tests.day15_configuration_driver_Kullanimi"></package>
+            <!--tüm testleri çalıştırmak isterseniz, package ismi olarak * yazarız-->
+        </packages>
+
+    </test>
+    
+</suite>

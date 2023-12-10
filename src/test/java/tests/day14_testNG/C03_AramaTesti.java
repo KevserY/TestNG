@@ -1,4 +1,4 @@
-package test.day14_testNG;
+package tests.day14_testNG;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -9,7 +9,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.security.Key;
 import java.time.Duration;
 
 public class C03_AramaTesti {

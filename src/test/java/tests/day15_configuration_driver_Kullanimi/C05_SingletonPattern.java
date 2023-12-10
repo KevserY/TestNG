@@ -1,11 +1,6 @@
-package test.day15_configuration_driver_Kullanimi;
+package tests.day15_configuration_driver_Kullanimi;
 
 import org.testng.annotations.Test;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.ReusableMethods;
-
-import java.util.Collection;
 
 public class C05_SingletonPattern {
 

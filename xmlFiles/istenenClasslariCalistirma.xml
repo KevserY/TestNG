@@ -1,0 +1,34 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!--
+    .xml dosyaları, TestNG'de toplu çalıştırma için kullanılır.
+
+    1- Başa yazdığımız satır, tüm .xml dosyalarımızda olmalıdır.
+       Bu satır, .xml dosyasında yazdığımız kodların, TestNG ile hazırlanan
+       tests method'ları, class'ları veya package'larını çalıştıracaktır.
+
+    2- Hangi method/class/package'ların çalışacağını tests hiyerarşisine uygun olarak
+       .xml dosyamızda yazmalıyız.
+
+    3- Test hiyerarşisi:
+       *Suit : Bir veya birden fazla Test içerir.
+       *Test : Bir amaç için bir araya getirilen, tests method/class/package'larından oluşan.
+       ve tek seferde çalıştırabileceğimiz yapıdır.
+       Örn: smoke tests, E2E, regression.
+
+       package - class - tests method'ları aynı seviyededir.
+
+-->
+<suite name="belirlenen classlari calistirma">
+
+    <test name="Login Testi">
+
+        <classes>
+            <class name="tests.day15_configuration_driver_Kullanimi.C03_PozitifLoginTesti"></class>
+            <class name="tests.day15_configuration_driver_Kullanimi.C04_NegatifLoginTesti"></class>
+            <class name="tests.day16_softAssertion_xmlFiles.C02_SoftAssertion"></class>
+        </classes>
+
+    </test>
+
+</suite>

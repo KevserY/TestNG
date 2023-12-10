@@ -1,9 +1,7 @@
-package test.day15_configuration_driver_Kullanimi;
+package tests.day15_configuration_driver_Kullanimi;
 
 import com.github.javafaker.Faker;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.WebuniversityPage;

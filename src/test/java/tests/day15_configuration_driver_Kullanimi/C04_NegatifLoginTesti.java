@@ -1,4 +1,4 @@
-package test.day15_configuration_driver_Kullanimi;
+package tests.day15_configuration_driver_Kullanimi;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -17,7 +17,7 @@ public class C04_NegatifLoginTesti {
     // 4- Login butonuna basarak login olun
     // 5- Basarili olarak giris yapilamadigini test edin
 
-    @Test
+    @Test(groups = "smoke")
     public void gecersizPasswordTesti() {
         // 1- https://www.testotomasyonu.com/ anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
@@ -35,7 +35,7 @@ public class C04_NegatifLoginTesti {
         Driver.quitDriver();
     }
 
-    @Test
+    @Test(groups = "regression")
     public void gecersizEmailTesti() {
         // 1- https://www.testotomasyonu.com/ anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
@@ -52,6 +52,7 @@ public class C04_NegatifLoginTesti {
         ReusableMethods.bekle(2);
         Driver.quitDriver();
     }
+
     @Test(priority = 5)
     public void gecersizEmailGecersizPasswordTesti() {
         // 1- https://www.testotomasyonu.com/ anasayfasina gidin

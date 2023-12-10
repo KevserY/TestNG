@@ -1,8 +1,6 @@
-package test.day14_testNG;
+package tests.day14_testNG;
 
 import org.testng.annotations.Test;
-
-import java.lang.annotation.Target;
 
 public class C01_Priority {
     /*

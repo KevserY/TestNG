@@ -1,6 +1,5 @@
-package test.day14_testNG;
+package tests.day14_testNG;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class C02_DependsOnMethods {

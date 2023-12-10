@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!--
+Eğer çalışacak test method'larını tek tek xml dosyasına yazmak istemezseniz
+TestNG'deki groups özelliğini kullanabilirsiniz.
+
+    Grup çalıştırma için iki hiyerarşiye ihtiyaç var:
+    1- hangi grup ve/veya grupların çalışıp çalışmayacağı
+    2- çalışacak test methodlarının nerede aranacağı
+
+-->
+<suite name="istenen grupları çalıştırma">
+    <test name="istenen grupları çalıştırma testi">
+
+
+        <groups>
+            <run>
+                <include name="smoke"></include>
+                <exclude name="regression"></exclude>
+            </run>
+        </groups>
+
+
+        <packages>
+            <package name="tests.*"></package>
+        </packages>
+
+
+    </test>
+</suite>
